@@ -5,10 +5,11 @@ import { ConfigType } from '@nestjs/config';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService,
-              @Inject(databaseConfig.KEY)
-              private dbConfig: ConfigType<typeof databaseConfig>,) {
-
+  constructor(
+    private readonly appService: AppService,
+    @Inject(databaseConfig.KEY)
+    private dbConfig: ConfigType<typeof databaseConfig>,
+  ) {
     Logger.log(dbConfig.host);
     Logger.log(dbConfig.port);
   }
