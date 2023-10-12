@@ -28,6 +28,13 @@
 
 ## Installation
 
+https://betterprogramming.pub/implementing-a-generic-repository-pattern-using-nestjs-fb4db1b61cce
+
+https://desarrolloweb.com/articulos/repositorios-typeorm-nest
+
+https://medium.com/@phatdev/how-to-build-a-scalable-maintainable-application-with-nestjs-mongodb-apply-the-design-patterns-7b287af61354
+https://www.linkedin.com/pulse/implementing-repository-pattern-nestjs-nadeera-sampath/
+
 ```bash
 $ npm install
 ```
