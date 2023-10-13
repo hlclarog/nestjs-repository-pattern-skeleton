@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { User } from './api/user/entities/user.entity';
 import { ConfigModule } from '@nestjs/config';
 import config from './config/configuration';
 import databaseConfig from './config/database.config';
+import { UserModule } from './api/user/user.module';
 
 @Module({
   imports: [
@@ -12,7 +12,7 @@ import databaseConfig from './config/database.config';
       load: [config, databaseConfig],
       envFilePath: ['.env.development'],
     }),
-    User,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
